@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>microlite-table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            
+        }
+        th{font-weight: 500;}
+        td{font-weight: 400;}
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <th colspan="2" rowspan="2">PWM SOLAR PCU</th>
+            <th>MLSH1150</th>
+            <th>MLSH1250</th>
+            <th>MLSH1450</th>
+            <th>MLSH1650</th>
+            <th>MLSH1700</th>
+            <th>MLSH2100</th>
+            <th>MLSH2750</th>
+            <th>MLSH3000</th>
+        </tr>
+        <tr>
+            <th>800VA/12V</th>
+            <th>925VA/12V</th>
+            <th>1050VA/12V</th>
+            <th>1200VA/12V</th>
+            <th>1500VA/24V</th>
+            <th>1900VA/24V</th>
+            <th>2500VA/24V</th>
+            <th>2750VA/24V</th>
+        </tr>
+        <tr>
+            <td rowspan="4">INPUT</td>
+            <td>Main WideUPS mode Voltage range</td>
+            <td colspan="8">90~295±10 VAC</td>
+        </tr>
+        <tr>
+            <td>Main UPS mode Voltage range</td>
+            <td colspan="8">180~265±10 VAC</td>
+        </tr>
+        <tr>
+            <td>Voltage (Mains mode)</td>
+            <td colspan="8">Same as Input</td>
+        </tr>
+        <tr>
+            <td>Frequency (Mains mode)</td>
+            <td colspan="8">Same as Input (41-65 Hz)</td>
+        </tr>
+        <tr>
+            <td rowspan="4">OUTPUT</td>
+            <td>Wave Form (Mains mode)</td>
+            <td colspan="8">Same as Input</td>
+        </tr>
+        <tr>
+            <td>Rated Voltage (Backup mode)*</td>
+            <td colspan="8">230 VAC ±10%</td>
+        </tr>
+        <tr>
+            <td>Rated Frequency (Backup mode)</td>
+            <td colspan="8">50Hz+0.1Hz</td>
+        </tr>
+        <tr>
+            <td>Wave Form (Backup mode)</td>
+            <td colspan="8">Pure Sine Wave</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Max Input Solar PV (V)</td>
+            <td colspan="4">25V</td>
+            <td colspan="4">50V</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Max PV Watt Wp</td>
+            <td colspan="4">800V</td>
+            <td colspan="4">1600V</td>
+        </tr>
+        <tr>
+            <td rowspan="2">SOLAR</td>
+            <td>Voltage (Voc)</td>
+            <td colspan="4">19~25 V</td>
+            <td colspan="4">1600V</td>
+        </tr>
+        <tr>
+            <td>Voltage (Vmp)</td>
+            <td colspan="4">19~17-19 V</td>
+            <td colspan="4">34~39 V</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Max PV Charging Current (A)</td>
+            <td colspan="8">50A</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Capacity</td>
+            <td colspan="8">100Ah-240Ah</td>
+        </tr>
+        <tr>
+            <td>BATTERY</td>
+            <td>Type</td>
+            <td colspan="8">Tubular,Flat Plate, SMF /VRLA or Any Local Battery Compatible</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>DC Voltage</td>
+            <td colspan="4">12V</td>
+            <td colspan="4">24V</td>
+        </tr>
+        <tr>
+            <td>PROTECTIONS</td>
+            <td>Parameters</td>
+            <td colspan="8">PV reverse polarity, Low battery, Reverse battery, PV high, Battery high voltage, Overload, Output short circuit, Over
+            temperature, Resettable Circuit Breakers at Input mains</td>
+        </tr>
+        <tr>
+            <td rowspan="5">SETTABLE OPTIONS</td>
+            <td>Battery Charging Current (Mains mode) (A)
+            (ON / OFF Switch any position)</td>
+            <td colspan="8">20/15( DEFAULT )/10/5/0 AMPS ***</td>
+        </tr>
+        <tr>
+            <td>UPS / WUPS mode selection (ON / OFF Switch any position)</td>
+            <td colspan="8">WUPS (default) 90V TO 295V</td>
+        </tr>
+        <tr>
+            <td>Priority selection
+            (ON/OFF Switch any position)**</td>
+            <td colspan="8">Grid(default)/Solar/User1/User2/Normal</td>
+        </tr>
+        <tr>
+            <td>Battery Type selection
+            (ON/OFF Switch ON Position only)</td>
+            <td colspan="8">Tubular(default)/ LA/Li-ion****</td>
+        </tr>
+        <tr>
+            <td>Battery Low setting per battery
+            (ON/ OFF SWITCH OFF position only)</td>
+            <td colspan="8">11/10.8/10.5(default) V</td>
+        </tr>
+        <tr>
+            <td rowspan="3">ENVIRON MENTAL</td>
+            <td>Operating Temperature</td>
+            <td colspan="8">0-450C (32-1130F)</td>
+        </tr>
+        <tr>
+            <td>Storage Temperature</td>
+            <td colspan="8">0-450C (32-1130F)</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td colspan="8">0-95% RH non condensing</td>
+        </tr>
+        <tr>
+            <td rowspan="3">ENVIRON MENTAL</td>
+            <td>Net weight (Kg)</td>
+            <td>8.0</td>
+            <td>8.4</td>
+            <td>9.4</td>
+            <td>11.2</td>
+            <td>14.6</td>
+            <td>15.1</td>
+            <td>17.9</td>
+            <td>19.7</td>
+        </tr>
+        <tr>
+            <td>Gross weight (Kg)</td>
+            <td>8.8</td>
+            <td>9.2</td>
+            <td>10.2</td>
+            <td>12</td>
+            <td>15.9</td>
+            <td>16.4</td>
+            <td>19.3</td>
+            <td>21.1</td>
+        </tr>
+        <tr>
+            <td>Dimensions (WXHxL) mm</td>
+            <td colspan="4">295x134.5x288.3</td>
+            <td colspan="2">295x182.5x309.8</td>
+            <td colspan="2">295x280x315</td>
+        </tr>
+    </table>
+</body>
+</html>
