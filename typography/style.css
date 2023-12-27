@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{ overflow-x: hidden; }
+a, .btn { text-decoration: none; outline: none; letter-spacing: 0; }
+a, .btn, img { transition: all ease-in-out 0.35s;}
+a:focus, a:active, a:visited, a:hover, a:focus-visible, button:focus, button:active, button:visited, button:hover, button:focus-visible, .btn:focus, .btn:active, .btn:visited, .btn:hover, .btn:focus-visible, input:focus, input:active, input:visited, input:hover, input:focus-visible, select:focus, select:active, select:visited, select:hover, select:focus-visible { text-decoration: none; outline: none !important; box-shadow: none !important; }
+
+p, li { margin: 0; padding: 0; }
+
+input:focus { outline: 0 !important; }
+
+textarea { resize: none; }
+
+p:empty { display: none; }
+
+ul, ol { padding-left: 21px; list-style: none; }
+
+ul li { list-style: disc; }
+
+ol li { list-style: decimal; }
+
+ul li::marker, ol li::marker { font-size: 110%; color: red; }
+
+/* Autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+select:-webkit-autofill,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:hover,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover {
+    transition: background-color 1000s ease-in-out 0s, color 1000s ease-in-out 0s;
+    -webkit-transition: background-color 1000s ease-in-out 0s, color 1000s ease-in-out 0s;
+    -moz-transition: background-color 1000s ease-in-out 0s, color 1000s ease-in-out 0s;
+    -o-transition: background-color 1000s ease-in-out 0s, color 1000s ease-in-out 0s;
+    -ms-transition: background-color 1000s ease-in-out 0s, color 1000s ease-in-out 0s
+}
+header.wp-block-template-part .wp-block-navigation, header.wp-block-template-part .wp-block-navigation .wp-block-page-list, header.wp-block-template-part .wp-block-navigation__container, header.wp-block-template-part .wp-block-navigation__responsive-container-content { gap: unset !important; }
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0 }
+
+:focus-visible { outline: none; }
+
+/* Number */
+input[type=number] { appearance: textfield; -webkit-appearance: textfield; -moz-appearance: textfield; }
+
+/* Form Input */
+input,
+select,
+textarea,
+.form-control,
+.form-select{ margin: 0;  padding: 0; height: auto; width: 100%; background-color: var(--f0); border: 0; border-radius: 0; }
+textarea{ height: auto;}
+
+/* placeholder */
+.form-control::-webkit-input-placeholder { color: var(--black)  }
+.form-control:-ms-input-placeholder { color: var(--black)  }
+.form-control::placeholder { color: var(--black)  }
+
+
+/* header section start */
+/* header section end */
+
+/* footer section start */
+/* footer section end */
+
+
+/* ============================================================================================================================================================= */
+/* =========================================  Media Query  ========================================== */
+
+/*=========================================1199px==========================================*/
+@media screen and (max-width:1199px) {}
+
+/*=========================================991px==========================================*/
+@media screen and (max-width:991px) {}
+
+/*=========================================767px==========================================*/
+@media screen and (max-width:767px) {}
+
+/*=========================================575px==========================================*/
+@media screen and (max-width:575px) {}
+
+/*=========================================480px==========================================*/
+@media screen and (max-width:480px) {}
